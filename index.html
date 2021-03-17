@@ -1,9 +1,12 @@
-<!doctype html>
+<!DOCTYPE html> 
 <html>
+
     <head>
         <meta charset="utf-8">
-        <title>Amar cloud based data management - IAAC</title>
-        <sytle>
+        <title>Dolphin Park</title>
+
+        <style>
+       
             html {
                 font-family: sans-serif;
             }
@@ -16,11 +19,45 @@
                 display: none; /* start with caption hidden */
                 font-style: italic;
             }
-        </sytle>
+        </style>
     </head>
     <body>
-        <h1>Hello, world</h1>
-        <p>This is an example...</p>
-        <iframe src="http://127.0.0.1:5500/example1/" style="border:none;" title="Iframe Example"></iframe>
+        <!-- some text and links -->
+       
+         <!-- an image -->
+        <img id="myImage"
+             alt="Black hole - Messier 87 crop max res"
+             src="https://images.squarespace-cdn.com/content/v1/5875a5aa20099e0e1263237b/1507735091545-SWDKKQHKVMYLARGT2T66/ke17ZwdGBToddI8pDm48kMMrhUZ3rQXTcnRxiSGi1G17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmaUzSiviepfuOufnJa7SEDRKl7z_LUwe8cDB0iQ_YpMlSenNy3wuK8-Q9DCm8gcSo/7.jpg?format=500w">
+
+        <!-- a caption -->
+        <p id="caption">
+            DOLPHIN PARK MASTERPLANS, 2014, MELBOURNE, AUSTRALIA
+“We stop projecting our ourselves and desires onto the bush. Instead, Australians should try to understand it as it is, and as it can be, while also owning upto the damage they have done to it, as well as to the people their ancestors found there.” The Bush, Don Watson
+
+        </p>
+
+        <iframe src="https://aamar-gurung.github.io/lecture2/example1/" height="200" width="300" title="Iframe Example"></iframe>
+
+        <!-- javascript -->
+        <script type="application/javascript">
+            // get reference to html elements
+            const img = document.getElementById('myImage')
+
+            // listen to events related to the image
+            img.addEventListener('mouseover', mouseOver, false)
+            img.addEventListener('mouseout', mouseOut, false)
+
+            // define what happens when there is a mouse over event
+            function mouseOver() {
+                document.getElementById('caption').style.display = 'block';
+            }
+
+            // define what happens when there is a mouse out event
+            function mouseOut() {
+                document.getElementById('caption').style.display = 'none';
+            }
+        </script>
+
+        <!-- the end -->
     </body>
 </html>
